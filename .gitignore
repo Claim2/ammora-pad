@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.deployer-key
+.agent-state/
+*.local
+.DS_Store
