@@ -36,7 +36,7 @@ export default function CreateToken() {
   const [threshold, setThreshold] = useState("0.001");
   const [metadataURI, setMetadataURI] = useState(
     typeof window !== "undefined" && window.location.origin.startsWith("https")
-      ? `${window.location.origin}/tokens/apad.json`
+      ? new URL("tokens/apad.json", window.location.href).toString()
       : "",
   );
   const [error, setError] = useState<string | null>(null);
